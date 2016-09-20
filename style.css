@@ -1,0 +1,316 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-left: 5px;
+}
+
+.h2 {
+    font-size: 38px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.h3 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.personal-info {
+    border-top: 1px solid #ccc;
+    min-height: 160px;
+}
+
+.green-border {
+    border-bottom: #3cc88c solid 10px;
+}
+
+.yellow-border {
+    border-bottom: #ffcc00 solid 10px;
+}
+
+dl {
+    padding: 10px 20px;
+}
+
+dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    font-weight: bold;
+    color: #393939;
+    padding-bottom: 5px;
+}
+
+dt:after {
+    content: ":";
+}
+
+dd {
+    margin: 0 0 0 110px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 5px;
+}
+
+header {
+    background-color: #003c5a;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+    width: 100%;
+    text-align: center;
+}
+
+.content img {
+    width: 90%;
+}
+
+/*    PERSONAL    */
+
+.personal {
+    position: absolute;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    width: 100%;
+    color: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.contact-card {
+    width: 600px;
+    background-color: #f7f7f7;
+    margin: 100px auto;
+}
+
+.close svg {
+    width: 20px;
+    float: right;
+    fill: #393939;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.close svg:hover {
+    fill-opacity: 0.8;
+}
+
+.profile-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: #393939 solid 3px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #003c5a;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+.button:hover {
+    background-color: #004c5a;
+}
+
+.button a {
+    padding: 10px 5px;
+    float: left;
+}
+
+#like span {
+    background: url("img/heart.svg") no-repeat;
+    width: 25px;
+    height: 25px;
+    margin: -3px 10px 0 50px;
+    float: left;
+    background-size: 25px;
+}
+
+#next a {
+    text-align: center;
+    width: inherit;
+}
+
+.match-found p {
+    width: 250px;
+    color: #003c5a;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50px;
+    position: absolute;
+}
+
+/* BOYS & GIRLS */
+
+.boys, .girls {
+    height: 470px;
+    -webkit-background-size: 65% 95%;
+    -moz-background-size: 65% 95%;
+    -o-background-size: 65% 95%;
+    background-size: 65% 95%;
+    background-repeat: no-repeat;
+}
+
+.boys  {
+    background-color:#3cc88c;
+    background-image: url("img/dragon-boy.svg");
+    background-position: -100px;
+    -webkit-background-size: 80% 100%;
+    -moz-background-size: 80% 100%;
+    -o-background-size: 80% 100%;
+    background-size: 80% 100%;
+}
+
+.girls {
+    background-color: #ffcc00;
+    background-image: url("img/dragon-girl.svg");
+}
+
+.gender {
+    position: relative;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 14px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 14px -7px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 14px -7px rgba(0,0,0,0.75);
+    margin-bottom: 20px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-bottom: #003c5a solid 10px;
+}
+
+.gender h3 {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    color: #003c5a;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.gender:hover {
+    -webkit-filter: brightness(85%);
+    filter: brightness(85%);
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+
+}
+
+.footer-stuff {
+    color: #003c5a;
+
+    line-height: 1.4;
+}
+
+.search {
+    float: right;
+    padding-right: 10px;
+    margin-right: -10px;
+    border-right: #ccc solid 1px;
+}
+
+.search input {
+    width: 182px;
+    padding: 6px;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.search .button {
+    margin: 5px 0;
+}
+
+.search a {
+    width: inherit;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-stuff ul {
+    width: 340px;
+    margin: 0 auto;
+    float: left;
+}
+
+.footer-stuff ul li:last-of-type {
+    padding-top: 5px;
+}
+
+/*    Mobile view    */
+
+@media only screen and (max-width: 767px) {
+    .gender {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .contact-card {
+        margin: 0;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .footer-stuff ul, .search {
+        float: none;
+        text-align: center;
+        border-right: none;
+    }
+    .footer-stuff ul {
+        padding-top: 10px;
+        margin-top: 20px;
+        border-top: #ccc solid 1px;
+    }
+    .search .button{
+        margin: 5px auto;
+    }
+    .match-found p {
+        margin-top: -235px;
+        padding: 20px 2px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .gender h3 {
+
+        font-size:46px;
+    }
+    .gender {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .boys, .girls {
+        height: 260px;
+    }
+
+
+}
