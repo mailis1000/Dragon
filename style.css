@@ -26,15 +26,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-.hidden {
-    display: none;
-}
-
-.personal-info {
-    border-top: 1px solid #ccc;
-    min-height: 160px;
-}
-
 .green-border {
     border-bottom: #3cc88c solid 10px;
 }
@@ -43,35 +34,8 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: #ffcc00 solid 10px;
 }
 
-dl {
-    padding: 10px 20px;
-}
-
-dt {
-    float: left;
-    clear: left;
-    width: 100px;
-    font-weight: bold;
-    color: #393939;
-    padding-bottom: 5px;
-}
-
-dt:after {
-    content: ":";
-}
-
-dd {
-    margin: 0 0 0 110px;
-    color: rgba(0, 0, 0, 0.8);
-    padding-bottom: 5px;
-}
-
-header {
-    background-color: #003c5a;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+.hidden {
+    display: none;
 }
 
 .text-center {
@@ -83,6 +47,14 @@ header {
     width: 90%;
 }
 
+header {
+    background-color: #003c5a;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
 /*    PERSONAL    */
 
 .personal {
@@ -90,7 +62,7 @@ header {
     height: 100%;
     display: none;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 999;
+    z-index: 2;
     width: 100%;
     color: white;
     -webkit-transition: all 0.5s ease;
@@ -126,6 +98,45 @@ header {
     margin-bottom: 10px;
 }
 
+.match-found p {
+    width: 250px;
+    color: #003c5a;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.personal-info {
+    border-top: 1px solid #ccc;
+    min-height: 160px;
+}
+
+dl {
+    padding: 10px 20px;
+}
+
+dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    font-weight: bold;
+    color: #393939;
+    padding-bottom: 5px;
+}
+
+dt:after {
+    content: ":";
+}
+
+dd {
+    margin: 0 0 0 110px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 5px;
+}
+
+/*    BUTTONS    */
+
 .button {
     background-color: #003c5a;
     width: 200px;
@@ -133,6 +144,7 @@ header {
     cursor: pointer;
     margin: 20px auto;
 }
+
 .button:hover {
     background-color: #004c5a;
 }
@@ -156,15 +168,6 @@ header {
     width: inherit;
 }
 
-.match-found p {
-    width: 250px;
-    color: #003c5a;
-    font-size: 100px;
-    text-align: center;
-    margin-top: 50px;
-    position: absolute;
-}
-
 /* BOYS & GIRLS */
 
 .boys, .girls {
@@ -176,8 +179,8 @@ header {
     background-repeat: no-repeat;
 }
 
-.boys  {
-    background-color:#3cc88c;
+.boys {
+    background-color: #3cc88c;
     background-image: url("img/dragon-boy.svg");
     background-position: -100px;
     -webkit-background-size: 80% 100%;
@@ -194,9 +197,9 @@ header {
 .gender {
     position: relative;
     cursor: pointer;
-    -webkit-box-shadow: 10px 10px 14px -7px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 14px -7px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 14px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 14px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 14px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 14px -7px rgba(0, 0, 0, 0.75);
     margin-bottom: 20px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -219,6 +222,8 @@ header {
     filter: brightness(85%);
 }
 
+/* FOOTER */
+
 footer {
     margin-top: 20px;
     border-top: 1px solid #ccc;
@@ -230,6 +235,18 @@ footer {
 
     line-height: 1.4;
 }
+
+.footer-stuff ul {
+    width: 340px;
+    margin: 0 auto;
+    float: left;
+}
+
+.footer-stuff ul li:last-of-type {
+    padding-top: 5px;
+}
+
+/* SEARCH */
 
 .search {
     float: right;
@@ -255,23 +272,14 @@ footer {
     text-align: center;
 }
 
-.footer-stuff ul {
-    width: 340px;
-    margin: 0 auto;
-    float: left;
-}
-
-.footer-stuff ul li:last-of-type {
-    padding-top: 5px;
-}
-
-/*    Mobile view    */
+/*    MOBILE VIEW    */
 
 @media only screen and (max-width: 767px) {
     .gender {
         margin-left: 60px;
         margin-right: 60px;
     }
+
     .contact-card {
         margin: 0;
         position: fixed;
@@ -279,19 +287,23 @@ footer {
         width: 100%;
         overflow: hidden;
     }
+
     .footer-stuff ul, .search {
         float: none;
         text-align: center;
         border-right: none;
     }
+
     .footer-stuff ul {
         padding-top: 10px;
         margin-top: 20px;
         border-top: #ccc solid 1px;
     }
-    .search .button{
+
+    .search .button {
         margin: 5px auto;
     }
+
     .match-found p {
         margin-top: -235px;
         padding: 20px 2px;
@@ -299,18 +311,20 @@ footer {
         color: white;
     }
 }
+
 @media only screen and (max-width: 500px) {
     .gender h3 {
 
-        font-size:46px;
+        font-size: 46px;
     }
+
     .gender {
         margin-left: 10px;
         margin-right: 10px;
     }
+
     .boys, .girls {
         height: 260px;
     }
-
 
 }
