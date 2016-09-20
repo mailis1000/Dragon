@@ -1,2 +1,2 @@
 # Dragon
-You can see sites example: http://arvutifix.eu/dragon/
+Dragon app example: http://arvutifix.eu/dragon/
